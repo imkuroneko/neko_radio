@@ -1,0 +1,20 @@
+{
+    "radio_needs_item" : "You need to buy a radio...",
+    "bind_description" : "Open the radio menu",
+    "radio_label" : "Radio",
+    "set_frequency_label" : "Frequency",
+    "set_volume_label" : "Volume",
+    "error_reserved_frequency" : "This frequency is reserved",
+    "error_frequency_not_available" : "Frequency not available",
+    "error_player_not_on_duty" : "You are not on duty to access this frequency",
+    "frequency_updated" : "Frequency set to channel %s",
+    "volume_updated" : "Volume updated",
+    "info_radio_off_volume" : "You need to be on a channel first to adjust the radio volume",
+    "mainmenu_frequency" : "Frequency",
+    "mainmenu_volume" : "Volume",
+    "mainmenu_turn_off" : "Turn off the radio",
+    "mainmenu_save" : "Save the radio",
+    "channel_description_off" : "You are not on a frequency",
+    "channel_description_on" : "You are on frequency %s",
+    "volume_description" : "The volume is at %s"
+}

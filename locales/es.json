@@ -1,0 +1,20 @@
+{
+    "radio_needs_item" : "Necesitas comprar una radio...",
+    "bind_description" : "Abrir el menú de la radio",
+    "radio_label" : "Radio",
+    "set_frequency_label" : "Frecuencia",
+    "set_volume_label" : "Volumen",
+    "error_reserved_frequency" : "Esta frecuencia se encuentra reservada",
+    "error_frequency_not_available" : "Frecuencia no disponible",
+    "error_player_not_on_duty" : "No te encuentras en servicio para acceder a esta frecuencia",
+    "frequency_updated" : "Frecuencia establecida al canal %s",
+    "volume_updated" : "Volumen actualizado",
+    "info_radio_off_volume" : "Debes estar en un canal primero para ajustar el volumen de la radio",
+    "mainmenu_frequency" : "Frecuencia",
+    "mainmenu_volume" : "Volumen",
+    "mainmenu_turn_off" : "Apagar la radio",
+    "mainmenu_save" : "Guardar la radio",
+    "channel_description_off" : "No te encuentras en una frecuencia",
+    "channel_description_on" : "Te encuentras en la frecuencia %s",
+    "volume_description" : "El volumen está al %s"
+}
