@@ -8,7 +8,8 @@
   <img src="https://img.shields.io/github/v/release/imkuroneko/neko_radio?logo=github"/> &nbsp;
 </p>
 
-Sistema de radio para servidores de FiveM basados en QBCore/ESX (Standalone)
+<p align="center">Sistema de radio para servidores de FiveM basados en QBCore/ESX. </p>
+<p align="center">Basado (rework completo de) en <a href="https://github.com/SzXna/szxna_radio" target="_blank">szxna_radio</a> </p>
 
 <br>
 
