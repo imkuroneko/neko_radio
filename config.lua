@@ -1,7 +1,7 @@
 Config = {}
 
 Config.requireItem    = true         -- utilizar item para el sistema de radio?
-Config.itemName       = {            -- se necesita uno de estos items para acceder a la radio
+Config.itemName       = {            -- se necesita uno de estos itambulance para acceder a la radio
     'radio'
 }
 
@@ -16,32 +16,45 @@ Config.minFrequency  = 1             -- número mínimo de frecuencia
 Config.maxFrequency  = 1000          -- número máximo de frecuencia
 
 
--- estos canales, estarán disponibles únicamente para estos tipos de facciones
--- los jobs deberán contar con el parámetro type para este control
+-- estos canales, estarán disponibles únicamente para estas de facciones
 Config.restrictedForJobs = {
-    [1]  = { 'leo' },
-    [2]  = { 'leo' },
-    [3]  = { 'leo' },
-    [4]  = { 'leo' },
-    [5]  = { 'leo' },
-    [6]  = { 'leo' },
-    [7]  = { 'leo' },
-    [8]  = { 'leo' },
-    [9]  = { 'leo' },
-    [10] = { 'leo' },
-    [11] = { 'ems' },
-    [12] = { 'ems' },
-    [13] = { 'ems' },
-    [14] = { 'ems' },
-    [15] = { 'ems' },
-    [16] = { 'ems' },
-    [17] = { 'ems' },
-    [18] = { 'ems' },
-    [19] = { 'ems' },
-    [20] = { 'ems' },
-    [21] = { 'leo', 'ems' },
-    [22] = { 'leo', 'ems' },
-    [23] = { 'leo', 'ems' },
-    [24] = { 'leo', 'ems' },
-    [25] = { 'leo', 'ems' },
+    [1]  = { 'police' },
+    [2]  = { 'police' },
+    [3]  = { 'police' },
+    [4]  = { 'police' },
+    [5]  = { 'police' },
+    [6]  = { 'police' },
+    [7]  = { 'police' },
+    [8]  = { 'police' },
+    [9]  = { 'police' },
+    [10] = { 'police' },
+
+    [11] = { 'lssd' },
+    [12] = { 'lssd' },
+    [13] = { 'lssd' },
+    [14] = { 'lssd' },
+    [15] = { 'lssd' },
+    [16] = { 'lssd' },
+    [17] = { 'lssd' },
+    [18] = { 'lssd' },
+    [19] = { 'lssd' },
+    [20] = { 'lssd' },
+
+    [21] = { 'police', 'lssd' },
+    [22] = { 'police', 'lssd' },
+    [23] = { 'police', 'lssd' },
+    [24] = { 'police', 'lssd' },
+    [25] = { 'police', 'lssd' },
+
+    [26] = { 'police', 'lssd', 'ambulance' },
+    [27] = { 'police', 'lssd', 'ambulance' },
+    [28] = { 'police', 'lssd', 'ambulance' },
+    [29] = { 'police', 'lssd', 'ambulance' },
+    [30] = { 'police', 'lssd', 'ambulance' },
+
+    [31] = { 'ambulance' },
+    [32] = { 'ambulance' },
+    [33] = { 'ambulance' },
+    [34] = { 'ambulance' },
+    [35] = { 'ambulance' },
 }

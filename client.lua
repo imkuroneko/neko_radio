@@ -1,5 +1,4 @@
 lib.locale()
-local QBCore = exports['qb-core']:GetCoreObject()
 
 RadioProp      = nil
 CurrentChannel = 0
@@ -49,17 +48,11 @@ AddEventHandler('neko_radio:client:set_frequency', function()
     if frequency > Config.maxFrequency or frequency < Config.minFrequency then
         return lib.notify({ description = locale('error_frequency_not_available'), type = 'error' })
     else
-        local player = QBCore.Functions.GetPlayerData()
+        local channInfo = GetAccessInfo(frequency)
 
-        if Config.restrictedForJobs[frequency] ~= nil then
-            HasRequiredJob = false
-
-            for key, type in pairs(Config.restrictedForJobs[frequency]) do
-                if player.job.type and player.job.type == type then HasRequiredJob = true end
-            end
-
-            if HasRequiredJob then
-                if not player.job.onduty then
+        if channInfo.jobChannel then
+            if channInfo.hasJob then
+                if not channInfo.onDuty then
                     return lib.notify({ description = locale('error_player_not_on_duty'), type = 'error' })
                 end
 
