@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/v/release/imkuroneko/neko_radio?logo=github"/> &nbsp;
 </p>
 
-Sistema de radio para servidores de FiveM basados en QBCore
+Sistema de radio para servidores de FiveM basados en QBCore/ESX (Standalone)
 
 <br>
 
