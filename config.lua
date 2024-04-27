@@ -1,7 +1,8 @@
 Config = {}
 
-Config.requireItem    = true         -- utilizar item para el sistema de radio?
-Config.itemName       = {            -- se necesita uno de estos itambulance para acceder a la radio
+Config.requireItem    = true           -- utilizar item para el sistema de radio?
+Config.shouldBrokenRadioOnWater = true -- romper el/los items al entrar al agua?
+Config.itemName       = {              -- se necesita uno de estos items para acceder a la radio; su equivalente dañado será con agregado de "_wet" al final
     'radio'
 }
 
