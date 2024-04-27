@@ -157,6 +157,16 @@ AddEventHandler('ox_inventory:itemCount', function(oxItem, oxCount)
     end
 end)
 
+-- ===== Thread
+CreateThread(function()
+    while (Config.shouldBrokenRadioOnWater and true) do
+        if IsPedSwimmingUnderWater(PlayerPedId()) or IsPedSwimming(PlayerPedId()) then
+            lib.callback.await('neko_radio:server:wet_radio', false)
+        end
+        Wait(3000)
+    end
+end)
+
 -- ===== Functions
 function ToggleRadioAnimation(state)
     lib.requestAnimDict('cellphone@')
