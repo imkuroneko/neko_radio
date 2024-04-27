@@ -147,11 +147,13 @@ AddEventHandler('neko_radio:client:build_menu', function()
 end)
 
 AddEventHandler('ox_inventory:itemCount', function(oxItem, oxCount)
-    local hasItem = lib.callback.await('neko_radio:server:verify_has_item', false)
+    if CurrentChannel > 0 then
+        local hasItem = lib.callback.await('neko_radio:server:verify_has_item', false)
 
-    if not hasItem then
-        SetRadioChannel(0, false)
-        return lib.notify({ description = locale('radio_dropped'), type = 'error' })
+        if not hasItem then
+            SetRadioChannel(0, false)
+            return lib.notify({ description = locale('radio_dropped'), type = 'error' })
+        end
     end
 end)
 
