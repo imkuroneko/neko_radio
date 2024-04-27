@@ -5,7 +5,7 @@ lua54       'yes'
 description 'Sistemas de radio'
 author      'KuroNeko'
 -- ===========================================================
-version     '1.1.0'
+version     '1.1.1'
 
 -- ===========================================================
 shared_scripts { '@ox_lib/init.lua', 'config.lua' }

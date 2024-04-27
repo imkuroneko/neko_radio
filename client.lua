@@ -146,6 +146,15 @@ AddEventHandler('neko_radio:client:build_menu', function()
     lib.showContext('radio_menu')
 end)
 
+AddEventHandler('ox_inventory:itemCount', function(oxItem, oxCount)
+    local hasItem = lib.callback.await('neko_radio:server:verify_has_item', false)
+
+    if not hasItem then
+        SetRadioChannel(0, false)
+        return lib.notify({ description = locale('radio_dropped'), type = 'error' })
+    end
+end)
+
 -- ===== Functions
 function ToggleRadioAnimation(state)
     lib.requestAnimDict('cellphone@')
@@ -166,6 +175,7 @@ function ToggleRadio()
     local hasItem = lib.callback.await('neko_radio:server:verify_has_item', false)
 
     if not hasItem then
+        SetRadioChannel(0, false)
         return lib.notify({ description = locale('radio_needs_item'), type = 'error' })
     else
         ToggleRadioAnimation(false)

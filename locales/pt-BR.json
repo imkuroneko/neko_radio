@@ -14,6 +14,7 @@
     "mainmenu_volume": "Volume",
     "mainmenu_turn_off": "Desligar o rádio",
     "mainmenu_save": "Salvar o rádio",
+    "radio_dropped" : "Você deixou a frequência de rádio",
     "channel_description_off": "Você não está em uma frequência",
     "channel_description_on": "Você está na frequência %s",
     "volume_description": "O volume está em %s"

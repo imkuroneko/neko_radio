@@ -14,6 +14,7 @@
     "mainmenu_volume" : "Volume",
     "mainmenu_turn_off" : "Turn off the radio",
     "mainmenu_save" : "Save the radio",
+    "radio_dropped" : "You have left the radio frequency",
     "channel_description_off" : "You are not on a frequency",
     "channel_description_on" : "You are on frequency %s",
     "volume_description" : "The volume is at %s"
